@@ -1,0 +1,7 @@
+import pandas as pd
+pd_data=pd.read_csv('Reviews.csv')
+pd_data=pd_data[1:10000]
+
+pd_data[pd_data['ProfileName']=='c2']['Score'].mean()
+
+pd.value_counts(pd_data.UserId)
